@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-import ollama
+#import ollama
 from langsmith import traceable
 
 MAX_ITERATIONS = 10
