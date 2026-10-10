@@ -1,14 +1,15 @@
-from dotenv import load_dotenv
 from typing import List
+
+from dotenv import load_dotenv
 from pydantic import BaseModel, Field
+
 load_dotenv()
 from langchain.agents import create_agent
+from langchain.chat_models import init_chat_model
 from langchain.tools import tool
 from langchain_core.messages import HumanMessage
-from langchain.chat_models import init_chat_model
 # pyrefly: ignore [missing-import]
 from langchain_tavily import TavilySearch
-
 
 tavily = TavilySearch(max_results=3)
 tools = [tavily]

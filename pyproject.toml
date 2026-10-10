@@ -17,6 +17,7 @@ dependencies = [
     "langchain-openai>=1.6.7",
     "langchain-openrouter>=0.2.9",
     "langchain-tavily>=0.2.18",
+    "ollama>=0.6.3",
     "python-dotenv>=1.2.4",
     "tavily-python>=0.8.4",
 ]
